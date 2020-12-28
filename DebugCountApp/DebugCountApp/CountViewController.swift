@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CountViewController.swift
 //  DebugCountApp
 //
 //  Created by fumiyatanaka_admin on 2020/12/17.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CountViewController: UIViewController {
 
     @IBOutlet var label: UILabel
     @IBOutlet var plusButton: UIButton!
