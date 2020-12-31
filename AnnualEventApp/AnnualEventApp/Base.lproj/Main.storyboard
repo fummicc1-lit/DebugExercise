@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qwy-EM-E6w">
+                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Ldr-pF-LZK"/>
+                                    <constraint firstAttribute="width" id="PmB-Yf-4ja"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="january" translatesAutoresizingMaskIntoConstraints="NO" id="Wbe-Ad-5xW">
                                 <rect key="frame" x="32" y="149" width="350" height="358.5"/>
                             </imageView>
@@ -30,6 +37,9 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
                                 <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
                                 <state key="normal" title="次へ"/>
+                                <connections>
+                                    <action selector="next" destination="BYZ-38-t0r" eventType="touchUpInside" id="ioy-an-xqx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/3年を振り返ろう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSA-ZS-mE8">
                                 <rect key="frame" x="64" y="84" width="286" height="41"/>
@@ -46,14 +56,19 @@
                             <constraint firstItem="ZSA-ZS-mE8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="9YU-8D-hWP"/>
                             <constraint firstItem="Wbe-Ad-5xW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="Aih-ph-JZQ"/>
                             <constraint firstItem="ZSA-ZS-mE8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LZI-sY-0rA"/>
+                            <constraint firstItem="qwy-EM-E6w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Omj-ow-kDl"/>
                             <constraint firstItem="yKT-rV-v0O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PVF-DY-ewK"/>
                             <constraint firstItem="Wbe-Ad-5xW" firstAttribute="top" secondItem="ZSA-ZS-mE8" secondAttribute="bottom" constant="24" id="SM6-qq-4QC"/>
+                            <constraint firstItem="qwy-EM-E6w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Y6l-Kr-eQK"/>
                             <constraint firstItem="3XJ-Ht-54p" firstAttribute="top" secondItem="Wbe-Ad-5xW" secondAttribute="bottom" constant="40" id="Y84-ac-qp0"/>
                             <constraint firstItem="3XJ-Ht-54p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pRv-Wn-pig"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wbe-Ad-5xW" secondAttribute="trailing" constant="32" id="vhX-OA-gWM"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="qwy-EM-E6w" id="qyu-VU-exn"/>
+                        <outlet property="backgroundViewHeight" destination="Ldr-pF-LZK" id="o6V-6P-7e7"/>
+                        <outlet property="backgroundViewWidth" destination="PmB-Yf-4ja" id="85c-o0-nEH"/>
                         <outlet property="monthImageView" destination="Wbe-Ad-5xW" id="acP-Gx-P6E"/>
                         <outlet property="monthLabel" destination="3XJ-Ht-54p" id="5gV-rp-273"/>
                         <outlet property="nextButton" destination="yKT-rV-v0O" id="VgD-at-ena"/>
@@ -61,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="81"/>
+            <point key="canvasLocation" x="18.840579710144929" y="80.357142857142847"/>
         </scene>
     </scenes>
     <resources>
