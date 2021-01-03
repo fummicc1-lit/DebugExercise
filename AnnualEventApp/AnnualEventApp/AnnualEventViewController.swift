@@ -34,6 +34,7 @@ class AnnualEventViewController: UIViewController {
         } else if month == 4 {
             monthImageView.image = UIImage(named: "april")
         } else {
+            monthLabel.text = "これ以上表示できません"
             monthImageView.image = nil
         }
     }
