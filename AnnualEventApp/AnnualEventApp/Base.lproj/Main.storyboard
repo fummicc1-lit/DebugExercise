@@ -32,21 +32,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKT-rV-v0O">
-                                <rect key="frame" x="158.5" y="627.5" width="97" height="55"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
-                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
-                                <state key="normal" title="次へ"/>
-                                <connections>
-                                    <action selector="next" destination="BYZ-38-t0r" eventType="touchUpInside" id="ioy-an-xqx"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/3年を振り返ろう" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSA-ZS-mE8">
                                 <rect key="frame" x="64" y="84" width="286" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKT-rV-v0O">
+                                <rect key="frame" x="159" y="627" width="97" height="55"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                <state key="normal" title="次へ"/>
+                                <connections>
+                                    <action selector="next" destination="BYZ-38-t0r" eventType="touchUpInside" id="ozg-Ql-uC8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,9 +66,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="qwy-EM-E6w" id="qyu-VU-exn"/>
-                        <outlet property="backgroundViewHeight" destination="Ldr-pF-LZK" id="o6V-6P-7e7"/>
-                        <outlet property="backgroundViewWidth" destination="PmB-Yf-4ja" id="85c-o0-nEH"/>
                         <outlet property="monthImageView" destination="Wbe-Ad-5xW" id="acP-Gx-P6E"/>
                         <outlet property="monthLabel" destination="3XJ-Ht-54p" id="5gV-rp-273"/>
                         <outlet property="nextButton" destination="yKT-rV-v0O" id="VgD-at-ena"/>
