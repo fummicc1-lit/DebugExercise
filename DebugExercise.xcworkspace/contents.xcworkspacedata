@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SimpleYoutubeApp/SimpleYoutubeApp.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:AnnualEventApp/AnnualEventApp.xcodeproj">
    </FileRef>
    <FileRef
